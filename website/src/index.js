@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// HashRouter ko import karen
+import { HashRouter as Router } from 'react-router-dom';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>  {/* HashRouter ka use yahan */}
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
